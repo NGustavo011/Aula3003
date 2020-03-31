@@ -22,7 +22,7 @@ public class LivroService {
         boolean encontrado = false;
         for (Livro aux : lr.getLivro().values()) 
             if(l.getNome().equals(aux.getNome()))
-                if((l.getAutor().equals(aux.getAutor())) || (l.getEdicao().equals(aux.getEdicao())))
+                if((l.getAutor().equals(aux.getAutor())) && (l.getEdicao().equals(aux.getEdicao())))
                     encontrado = true;
         if(!encontrado)
         {
